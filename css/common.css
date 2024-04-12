@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* #region Base */
 * {
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -12,3 +16,233 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+/* #endregion */
+
+/* #region Task1 */
+#categories {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  list-style: none;
+  padding: 24px;
+}
+
+#categories .item {
+  width: 392px;
+  row-gap: 24px;
+  background-color: #f6f6fe;
+  padding: 16px;
+}
+
+#categories .item h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#categories .item ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 8px;
+  list-style: none;
+}
+
+#categories .item li {
+  padding: 8px 16px;
+  width: 100%;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+/* #endregion */
+
+/* #region Task2 */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  max-width: 1128px;
+  padding: 0px;
+  margin: 100px auto;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+  list-style: none;
+  width: calc((100% - 2 * 24px) / 3);
+}
+
+.gallery-image {
+  width: 360px;
+  height: 300px;
+  object-fit: cover;
+}
+/* #endregion */
+
+/* #region Task3 */
+#name-input {
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#name-input + h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+/* #endregion */
+
+/* #region Task4 */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.login-form input {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+.login-form input:hover {
+  border: 1px solid #000;
+}
+
+.login-form input:focus {
+  outline: none;
+  border: 1px solid #808080;
+}
+
+.login-form button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: #4e75ff;
+  border: none;
+}
+
+.login-form button:hover {
+  background-color: #6c8cff;
+}
+/* #endregion */
+
+/* #region Task5 */
+.widget {
+  margin: 100px 88px;
+  font-family: 'Montserrat', sans-serif;
+  width: 169px;
+  height: 80px;
+}
+
+.change-color {
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: 0;
+}
+/* #endregion */
+
+/* #region Task6 */
+#controls {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding: 32px;
+  width: 486px;
+  height: 104px;
+  border-radius: 8px;
+  background-color: #f6f6fe;
+}
+
+#controls > input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px 72px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#controls button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  border: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+#controls [data-create] {
+  background-color: #4e75ff;
+}
+
+#controls [data-destroy] {
+  background-color: #ff4e4e;
+}
+
+#controls [data-destroy]:hover {
+  background-color: #ff7070;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-radius: 8px;
+  padding: 32px;
+  min-width: 486px;
+  background-color: #f6f6fe;
+}
+/* #endregion */
