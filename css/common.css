@@ -207,6 +207,7 @@ body {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.04em;
+  text-align: center;
   color: #2e2f42;
 }
 
@@ -240,9 +241,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  border-radius: 8px;
   padding: 32px;
-  min-width: 486px;
+  width: 486px;
   background-color: #f6f6fe;
+  border-radius: 8px;
 }
 /* #endregion */
