@@ -30,12 +30,11 @@ const galleryList = document.querySelector('.gallery');
 galleryList.insertAdjacentHTML(
   'beforeend',
   images
-    .map((image, idx) =>
-      idx <= 2
-        ? `<li class="gallery-item">
-      <img class="gallery-image" src="${image.url}" alt="${image.alt}">
-    </li>`
-        : ''
+    .map(
+      image =>
+        `<li class="gallery-item">
+          <img class="gallery-image" src="${image.url}" alt="${image.alt}">
+        </li>`
     )
     .join('')
 );
