@@ -27,20 +27,15 @@ const images = [
 
 const galleryList = document.querySelector('.gallery');
 
-galleryList.insertAdjacentHTML('beforeend', insertImages());
-
-function insertImages() {
-  let list = '';
-
-  for (let i = 0; i < images.length; i += 2) {
-    list += `
-    <li class="gallery-item">
-      <img class="gallery-image" src="${images[i].url}" alt="${images[i].alt}">
-      <img class="gallery-image" src="${images[i + 1].url}" alt="${
-      images[i + 1].url
-    }">
-    </li>`;
-  }
-
-  return list;
-}
+galleryList.insertAdjacentHTML(
+  'beforeend',
+  images
+    .map((image, idx) =>
+      idx <= 2
+        ? `<li class="gallery-item">
+      <img class="gallery-image" src="${image.url}" alt="${image.alt}">
+    </li>`
+        : ''
+    )
+    .join('')
+);
